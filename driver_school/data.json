@@ -2,24 +2,24 @@
   "lessons" :
   {
     "rules" :
-    {
-      "stop" : "You should stop instead of go slow on it.",
-      "overtaking": "You are allowed to overtaking only when the street line is dashed.",
-      "semaphores" : "Green, go on, yellow, be careful, red, stop"
-    },
+    [
+      "Stop sign means you should stop instead of go slow.",
+      "You are only allowed to overtaking only when the street line is dashed.",
+      "Green semaphore means you can go on, yellow, be careful and red means stop"
+    ],
     "max-speeds" :
-    {
-      "Maximum speed in a highway is" : "120",
-      "Maximum speed outside on villages is" : "90",
-      "Maximum speed inside on villages is" : "50"
-    },
+    [
+      "Maximum speed in a highway is 120",
+      "Maximum speed outside on villages is 90",
+      "Maximum speed inside on villages is 50"
+    ],
     "signals" :
-    {
-      "prohibition" : "The prohibition signs are round and have a red border.",
-      "obligation" : "The obligation signs are round and have a blue border.",
-      "priority" : "The priority signs are an inverse triangle.",
-      "danger" : "The priority signs are a triangle."
-    }
+    [
+      "The prohibition signs are round and have a red border.",
+      "The obligation signs are round and have a blue border.",
+      "The priority signs are an inverse triangle.",
+      "The priority signs are a triangle."
+    ]
   },
   "exams" :
   {
