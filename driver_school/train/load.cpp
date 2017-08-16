@@ -7,8 +7,7 @@ using nlohmann::json;
 
 json load()
 {
-    std::ifstream i("data.json");
-    json j;
-    i >> j;
+    std::ifstream ifs("data.json");
+    json j = json::parse(ifs);
     return j;
 }

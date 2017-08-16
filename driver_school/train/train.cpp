@@ -13,6 +13,7 @@ using nlohmann::json;
 void menu_train()
 {
     int answer = 0;
+    int total_lessons;
     json json_data;
     string fake;
     while(answer == 0)
@@ -35,5 +36,29 @@ void menu_train()
     cin.get();
     cin.get();
 
-    //json_data = load();
+    json_data = load();
+
+    cout << ">> First, we start with rules <<" << endl << endl;
+    total_lessons = json_data.at("lessons").at("rules").size();
+    for(int i = 0; i < total_lessons; i++)
+    {
+        cout << json_data.at("lessons").at("rules").at(i).get<std::string>();
+        cin.get();
+    }
+    cout << ">> Now, max speeds <<" << endl << endl;
+    total_lessons = json_data.at("lessons").at("max-speeds").size();
+    for(int i = 0; i < total_lessons; i++)
+    {
+        cout << json_data.at("lessons").at("max-speeds").at(i).get<std::string>();
+        cin.get();
+    }
+    cout << ">> And to finalize, signs <<" << endl << endl;
+    total_lessons = json_data.at("lessons").at("signals").size();
+    for(int i = 0; i < total_lessons; i++)
+    {
+        cout << json_data.at("lessons").at("signals").at(i).get<std::string>();
+        cin.get();
+    }
+    cout << "Lessons finished! Go back, study and do an exam." << endl;
+    cin.get();
 }
